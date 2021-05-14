@@ -1,0 +1,139 @@
+ /* webpage color schemes */
+ :root {
+    --c1: #6b6e70;
+    --c2: #474b4f;
+    --c3: #222629;
+    --c4: #86c232;
+    --c5: #61892f;
+ }
+  
+/* sets all margins and boarders to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* apply styles to <body> */
+body {
+    color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  header {
+    padding: 20px 35px;
+    background-color: var(--c1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+    border-bottom: 2px solid var(--c4); 
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--c4);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--c4);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--c4);
+  color: var(--c2);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero {
+    color: var(--c3);
+    background-color: var(--c1);
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin: 0 20px;
+    padding: 10px 20px;
+}
+
+.hero p {
+    margin: 0 20px;
+    padding: 10px 20px;
+}
+
+.flex-row {
+    display: flex;
+  }
+
+.section-box {
+    background-color: var(--c3);
+}
+
+.title-box {
+    font-size: 48px;
+    color: var(--c5);
+    padding-bottom: 20px;
+    text-align: right;
+    margin: 10px 50px;
+    width: 20%; 
+    border-right: 2px solid var(--c5);   
+}
+
+.content-box {
+    font-size: 22px;
+    color: var(--c5);
+    padding-bottom: 0;
+    text-align: center;
+    margin: 20px 50px;
+    width: 50%; 
+    border-bottom: 2px solid var(--c5);  
+}
+
+.content-box ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
