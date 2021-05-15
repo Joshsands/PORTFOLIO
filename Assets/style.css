@@ -16,7 +16,6 @@
 
     /* apply styles to <body> */
 body {
-    color: whitesmoke;
     font-family: Helvetica, Arial, sans-serif;
   }
 
@@ -81,25 +80,34 @@ header nav ul li a:hover {
     color: var(--c3);
     background-color: var(--c1);
     background-image: url("");
-    background-size: cover;
-    background-position: center;
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
+}
+
+.hero-image {
+    display: flex;
+    margin: 0 20px;
+    padding: 10px 20px;
 }
 
 .hero h3 {
-    font-size: 24px;
+    font-size: 1.55vw;
+    margin: 0 0 0 35px;
+    padding: 10px 20px;
+}
+
+.hero img {
+    max-width: 10%;
+    max-height: 10%;
     margin: 0 20px;
     padding: 10px 20px;
 }
 
 .hero p {
-    margin: 0 20px;
-    padding: 10px 20px;
+   display: flex;
+    margin: 0 auto;
+    padding: 10px 50px;
+    font-size: 1.55vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex-row {
@@ -108,32 +116,102 @@ header nav ul li a:hover {
 
 .section-box {
     background-color: var(--c3);
+    padding: 10px 0 10px 0;
 }
 
 .title-box {
     font-size: 48px;
     color: var(--c5);
-    padding-bottom: 20px;
+    padding: 20px 10px;
     text-align: right;
-    margin: 10px 50px;
+    margin: 10px 10px;
     width: 20%; 
     border-right: 2px solid var(--c5);   
+}
+
+.about-me-box {
+    font-size: 22px;
+    color: var(--c5);
+    padding: 20px 0;
+    text-align: center;
+    margin: 0 30px;
+    width: 100%; 
+    border-bottom: 2px solid var(--c5);
 }
 
 .content-box {
     font-size: 22px;
     color: var(--c5);
-    padding-bottom: 0;
+    padding: 20px 0;
     text-align: center;
-    margin: 20px 50px;
-    width: 50%; 
-    border-bottom: 2px solid var(--c5);  
+    margin: 0 30px;
+    width: 100%; 
 }
 
-.content-box ul {
+.contact-box {
+    font-size: 22px;
+    color: var(--c5);
+    padding: 0px 0;
+    margin: 0 30px;
+    width: 100%; 
+    border-bottom: 2px solid var(--c5);
+    border-top: 2px solid var(--c5);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.contact-box ul {
+    display: flex;
     align-items: center;
     list-style: none;
+    justify-content: space-between;
+  }
+
+.contact-box ul li {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+  .projects {
+      justify-content: center;
+      margin: 10px 10px;
+      padding: 0;
+      position: relative;
+      border: 6px solid var(--c4);
+  }
+
+  .projects img {
+    display: block;
+    max-width:300px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+  }
+
+  .text-block {
+    position: absolute;
+    bottom: 18px;
+    right: -1.8%;
+    background-color: var(--c3);
+    padding: 20px 50px;
+    margin: 0;
+    color: var(--c4);
+    border: 4px solid var(--c4);
+    border-right: 4px solid var(--c3);
+  }
+
+  .projects:hover {
+    webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 4px solid var(--c4);
+  }
+
+  .projects:hover img {
+    opacity: 1;
   }
