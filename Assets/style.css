@@ -79,19 +79,16 @@ header nav ul li a:hover {
 .hero {
     color: var(--c3);
     background-color: var(--c1);
-    background-image: url("");
-}
-
-.hero-image {
-    display: flex;
-    margin: 0 20px;
-    padding: 10px 20px;
+    background-image: url("./Austin-backdrop-green.png");
+    background-size: cover;
 }
 
 .hero h3 {
-    font-size: 1.55vw;
-    margin: 0 0 0 35px;
-    padding: 10px 20px;
+    font-size: 2.55vw;
+    margin: 0 auto;
+    padding: 5px 100px;
+    color: var(--c3);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
 }
 
 .hero img {
@@ -102,12 +99,12 @@ header nav ul li a:hover {
 }
 
 .hero p {
-   display: flex;
+
     margin: 0 auto;
-    padding: 10px 50px;
-    font-size: 1.55vw;
-    align-items: center;
-    justify-content: center;
+    padding: 5px 50px;
+    font-size: 3.55vw;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    color: var(--c3);
 }
 
 .flex-row {
@@ -120,20 +117,20 @@ header nav ul li a:hover {
 }
 
 .title-box {
-    font-size: 48px;
+    font-size: 5vw;
     color: var(--c5);
     padding: 20px 10px;
     text-align: right;
     margin: 10px 10px;
-    width: 20%; 
+    width: 30%; 
     border-right: 2px solid var(--c5);   
 }
 
 .about-me-box {
-    font-size: 22px;
-    color: var(--c5);
+    font-size: 1.55vw;
+    color: var(--c4);
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
     margin: 0 30px;
     width: 100%; 
     border-bottom: 2px solid var(--c5);
@@ -149,7 +146,7 @@ header nav ul li a:hover {
 }
 
 .contact-box {
-    font-size: 22px;
+    font-size: 2.5vw;
     color: var(--c5);
     padding: 0px 0;
     margin: 0 30px;
@@ -170,6 +167,11 @@ header nav ul li a:hover {
 .contact-box ul li {
     padding: 0 10px;
     margin: 0 10px;
+    color: var(--c4);
+}
+
+.contact-box ul li a {
+    color: var(--c4);
 }
 
 .flex {
@@ -187,8 +189,8 @@ header nav ul li a:hover {
 
   .projects img {
     display: block;
-    max-width:300px;
-    max-height:500px;
+    max-width: 20vw;
+    max-height: 30vw;
     width: auto;
     height: auto;
     opacity: 0.5;
@@ -203,7 +205,8 @@ header nav ul li a:hover {
     margin: 0;
     color: var(--c4);
     border: 4px solid var(--c4);
-    border-right: 4px solid var(--c3);
+    border-right: 6px solid var(--c3);
+    font-size: 1.4vw;
   }
 
   .projects:hover {
@@ -215,3 +218,85 @@ header nav ul li a:hover {
   .projects:hover img {
     opacity: 1;
   }
+
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    .contact-box, .contact-box ul {
+      text-align: center;
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .hero h3, .hero p, .hero img {
+      width: 100%;
+      text-align: center;
+      align-content: center;
+      margin: 0 auto;
+      padding: 10px;
+      display: block;
+    }
+  
+    .title-box {
+      width: 30%;
+    }
+    
+    .about-me-box, .content-box, .contact-box {
+    padding: 0 auto;
+    margin: 0 auto;
+    }
+
+    .text-block {
+        width: 80%;
+        bottom: 3px;
+        left: -1px;
+        border-right: 4px solid var(--c4);
+        padding: 5px 0px;
+        margin: 0 auto;
+    }
+    .contact-box ul {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        justify-content:first stretch;
+    }
+
+    .contact-box ul li {
+        padding: 0 0px;
+        margin: 0;
+    }
+}
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+  }
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+      .contact-box ul li{
+          padding:0 40px;
+          margin: 0 40px;
+      }
+  }
+
+/* end of style sheet */
