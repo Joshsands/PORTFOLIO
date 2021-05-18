@@ -18,4 +18,4 @@ Made by Joshua Sands
 
 ## Screenshot
 
-! [] (./assets/screenshot.png)
+<img src="./Assets/screenshot.png" />
