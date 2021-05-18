@@ -7,10 +7,10 @@ Portfolio of projects for Joshua Sands
 * HTML
 * CSS
 
-##Website
+## Website
 https://joshsands.github.io/PORTFOLIO/
 
-##GitHub Repository
+## GitHub Repository
 https://github.com/Joshsands/PORTFOLIO
 
 ## Contribution
