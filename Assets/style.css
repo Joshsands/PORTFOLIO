@@ -34,7 +34,6 @@ body {
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
-    border-bottom: 2px solid var(--c4); 
 }
 
 header h1 {
@@ -83,12 +82,13 @@ header nav ul li a:hover {
     background-color: var(--c1);
     background-image: url("./Austin-backdrop-green.png");
     background-size: cover;
+    border: 4px solid var(--c4);
 }
 
 .hero h2 {
     font-size: 2.55vw;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     color: var(--c3);
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -258,6 +258,10 @@ header nav ul li a:hover {
       font-size: 20px;
     }
   
+    .hero h2 {
+      padding: 10px;
+    }
+
     .contact-box, .contact-box ul {
       text-align: center;
       width: 100%;
@@ -296,6 +300,9 @@ header nav ul li a:hover {
 
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
+    .hero h2 {
+      padding: 5px;
+    }
   }
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
