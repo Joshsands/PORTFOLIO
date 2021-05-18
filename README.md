@@ -16,4 +16,5 @@ https://github.com/Joshsands/PORTFOLIO
 ## Contribution
 Made by Joshua Sands
 
-<img src="./assets/screensho.png />
+## Screenshot
+<img src="./assets/screensho.png" />
