@@ -1,10 +1,10 @@
  /* webpage color schemes */
  :root {
-    --c1: #6b6e70;
-    --c2: #474b4f;
-    --c3: #222629;
-    --c4: #86c232;
-    --c5: #61892f;
+    --c1: #FC4445;
+    --c2: #3fEEE6;
+    --c3: #55bcc9;
+    --c4: #97caef;
+    --c5: #cafafe;
  }
   
 /* sets all margins and boarders to 0 */
@@ -46,7 +46,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--c4);
+    color: var(--c2);
 }
 
 header nav {
@@ -70,8 +70,8 @@ header nav ul {
 
 /* changes state of nave bar on hover */
 header nav ul li a:hover {
-  background: var(--c4);
-  color: var(--c2);
+  background: var(--c2);
+  color: var(--c1);
   border-radius: 15px;
   text-shadow: none;
 }
@@ -80,16 +80,16 @@ header nav ul li a:hover {
 .hero {
     color: var(--c3);
     background-color: var(--c1);
-    background-image: url("./Austin-backdrop-green.png");
+    background-image: url("./Austin-backdrop-blue.png");
     background-size: cover;
-    border: 4px solid var(--c4);
+    background-size: 100vw 17vw;
 }
 
 .hero h2 {
     font-size: 2.55vw;
     margin: 0;
     padding: 20px 0;
-    color: var(--c3);
+    color: var(--c2);
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
@@ -108,7 +108,7 @@ header nav ul li a:hover {
     padding: 0;
     font-size: 3.55vw;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    color: var(--c3);
+    color: var(--c2);
     text-align: center;
 }
 
@@ -141,7 +141,7 @@ header nav ul li a:hover {
 /* secton 1: about me style */
 .about-me-box {
     font-size: 1.55vw;
-    color: var(--c4);
+    color: var(--c5);
     padding: 20px 0;
     text-align: left;
     margin: 0 30px;
@@ -169,7 +169,7 @@ header nav ul li a:hover {
       margin: 10px 10px;
       padding: 0;
       position: relative;
-      border: 6px solid var(--c4);
+      border: 6px solid var(--c2);
   }
 
   .projects img {
@@ -189,8 +189,8 @@ header nav ul li a:hover {
     background-color: var(--c3);
     padding: 20px 50px;
     margin: 0;
-    color: var(--c4);
-    border: 4px solid var(--c4);
+    color: var(--c1);
+    border: 4px solid var(--c1);
     border-right: 6px solid var(--c3);
     font-size: 1.4vw;
   }
@@ -198,7 +198,7 @@ header nav ul li a:hover {
   .projects:hover {
     webkit-transform: scale(1.1);
     transform: scale(1.1);
-    border: 4px solid var(--c4);
+    border: 4px solid var(--c1);
   }
 
   .projects:hover img {
@@ -228,11 +228,11 @@ header nav ul li a:hover {
 .contact-box ul li {
   padding: 0 10px;
   margin: 0 10px;
-  color: var(--c4);
+  color: var(--c1);
 }
 
 .contact-box ul li a {
-  color: var(--c4);
+  color: var(--c1);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
